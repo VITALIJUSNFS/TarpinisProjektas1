@@ -1,0 +1,15 @@
+Duombaze reikalinga. (Mysql). Jeigu nebijot - kitokia. Pvz PostgresSql, H2, MongoDB.
+Hibernate.
+Minimum 2-3 lenteles ir sarysiai tarp ju.
+Gerosios praktikos, OOP principai. Paveldimumas, galbut abstrakcios klases ir t.t. (Interfaces)
+Repository/Service layeris. CRUD funkcionalumas.
+Exceptionai
+UNIT testai
+Service layeri turetu buti logikos, kad jai parasyti testus.
+*Optional pabandyti minmaliai streamu/lambda expressionu
+Duomenu strukturos tokios kaip Listai, Setai, Mapai.
+Tvarkingi packages, klasiu ir metodu pavadinimai.
+*Optional Json failu skaitymas/rasymas
+GITas butinai.
+*Paleisti unit testus maveno pagalba kai buildinam projekta
+*Scanneris/user inputai.
