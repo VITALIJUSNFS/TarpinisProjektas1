@@ -14,7 +14,7 @@ import java.util.List;
 @NoArgsConstructor
 @Entity
 @Table(name = "vehicle")
-public class Vehicle {
+public class Vehicle extends Exception{
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -23,19 +23,24 @@ public class Vehicle {
     private String name;
     private String brand;
     private String regNumber;
+    private String emissionLevel;
+
 
     @ManyToOne
+    @ToString.Exclude
     @JoinColumn(name = "company_id")
     private Company company;
 
 
     @ManyToMany
+    @ToString.Exclude
     @JoinTable(name = "vehicle_driver",
             joinColumns = @JoinColumn(name = "vehicle_id"),
             inverseJoinColumns = @JoinColumn(name = "truckDriver_id"))
     private List<TruckDriver> TruckDrivers = new ArrayList<>();
 
     @OneToOne(mappedBy = "vehicle")
+    @ToString.Exclude
     private RepairingWorkshop repairingWorkshop;
 
 

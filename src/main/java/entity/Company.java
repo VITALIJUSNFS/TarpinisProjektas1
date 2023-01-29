@@ -22,9 +22,9 @@ public class Company {
 
     private String name;
     private String country;
+    private int budget;
 
     @OneToMany(mappedBy = "company", cascade = CascadeType.ALL)
+    @ToString.Exclude
     private List<Vehicle> vehicles = new ArrayList<>();
-
-
 }
